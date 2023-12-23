@@ -6,12 +6,10 @@ export const CardPokemon = ({ pokemon }) => {
   return (
     <div className="max-w-sm w-full dark:bg-gray-700 border border-gray-200 dark:border-gray-600 rounded-lg py-2">
       <img
-        className="rounded-t-lg mx-auto sm:h-40 sm:w-52 object-cover"
+        className="rounded-t-lg mx-auto sm:h-40 sm:w-48 object-cover"
         src={pokemon.sprites.other.dream_world.front_default}
-        srcSet={`${pokemon.sprites.other.dream_world.front_default} 1x, ${pokemon.sprites.other.dream_world.front_default_2x} 2x`}
         sizes="(max-width: 600px) 100vw, (max-width: 960px) 80vw, 52vw"
         loading="lazy"
-        alt=""
       />
 
       <div className="p-5">
