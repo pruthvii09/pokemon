@@ -8,6 +8,8 @@ export const CardPokemon = ({ pokemon }) => {
       <img
         className="rounded-t-lg mx-auto sm:h-40 sm:w-52 object-cover"
         src={pokemon.sprites.other.dream_world.front_default}
+        srcSet={`${pokemon.sprites.other.dream_world.front_default} 1x, ${pokemon.sprites.other.dream_world.front_default_2x} 2x`}
+        sizes="(max-width: 600px) 100vw, (max-width: 960px) 80vw, 52vw"
         loading="lazy"
         alt=""
       />
